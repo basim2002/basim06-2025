@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+
+    </head>
+    <body>
+        <h1>SIMPLE CALCIULATOR </h1>
+        <P id="result">0 </P><br>
+        <input id="val1">
+        <input id="val2"><br>
+        <button id="btn">CLICK</button>
+        <script>
+            document.getElementById("btn").onclick=function(){
+                const num1=document.getElementById("val1").value
+                const num2=document.getElementById("val2").value
+                const result= parseInt(num1) + parseInt(num2);
+
+                document.getElementById("result").innerHTML=result
+
+
+
+
+            }
+        </script>
+    </body>
+</html>

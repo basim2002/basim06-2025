@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            EMOSION emoji
+
+        </title>
+    </head>
+    <body>
+        <P>Happy and Angry</P>
+        <h1 id="emoji">😑 </h1>
+        <button onclick="moodchange('HAPPY')">😁</button>
+        <button onclick="moodchange('ANGRY')">😡</button>
+        <script>
+            function moodchange(mood){
+                if (mood=="HAPPY"){
+                    document.getElementById("emoji").innerText="😁"
+                    
+                }
+                else if(mood=="ANGRY"){
+                    document.getElementById("emoji").innerText="😡"
+                  
+                }
+            }
+        </script>
+
+    </body>
+</html>

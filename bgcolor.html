@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BGCOLOR
+
+        </title>
+    </head>
+    <body>
+        <P>BG COLOUR CHANGE</P>
+        <h1 id="emoji">😑 </h1>
+        <button onclick="moodchange('HAPPY')" style="background-color: yellow ;">😁</button>
+        <button onclick="moodchange('ANGRY')" style="background-color: red;">😡</button>
+        <script>
+            function moodchange(mood){
+                if (mood=="HAPPY"){
+                    document.getElementById("emoji").innerText="😁"
+                    document.body.style.backgroundColor="yellow"
+                }
+                else if(mood=="ANGRY"){
+                    document.getElementById("emoji").innerText="😡"
+                    document.body.style.backgroundColor="red"
+                  
+                }
+            }
+        </script>
+
+    </body>
+</html>
